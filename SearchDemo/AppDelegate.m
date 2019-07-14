@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MailListController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    UIWindow *window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    window.rootViewController = [[MailListController alloc] init];
+    window.backgroundColor = [UIColor whiteColor];
+    self.window = window;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
