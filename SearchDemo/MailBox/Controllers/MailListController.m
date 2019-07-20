@@ -77,7 +77,7 @@ static NSString * const kCellID = @"mail.item";
 - (UICollectionView *)createCollectionView {
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     flowLayout.minimumInteritemSpacing = 0;
-    flowLayout.minimumLineSpacing = 10;
+    flowLayout.minimumLineSpacing = 0;
     flowLayout.itemSize = CGSizeMake(self.view.width, kCellHeight);
     flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
     

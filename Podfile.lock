@@ -1,16 +1,20 @@
 PODS:
+  - DateTools (2.0.0)
   - Masonry (1.1.0)
 
 DEPENDENCIES:
+  - DateTools
   - Masonry
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - DateTools
     - Masonry
 
 SPEC CHECKSUMS:
+  DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: f405d035f43ba1b98101cc139320c14e65d6e2ca
+PODFILE CHECKSUM: 53ab25be2132fef825cda5851504bb7dfd722b24
 
 COCOAPODS: 1.6.2

@@ -16,7 +16,7 @@
                           time:(NSTimeInterval)time {
     MailItem *mail = [[MailItem alloc] init];
     mail.sender = sender;
-    mail.subject = sender;
+    mail.subject = subject;
     mail.content = content;
     mail.time = time;
     return mail;
