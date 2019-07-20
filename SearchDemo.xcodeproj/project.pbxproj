@@ -20,6 +20,9 @@
 		1136665522DA19630009090F /* MailItemTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1136665422DA19630009090F /* MailItemTestViewModel.m */; };
 		1136665822DA1C180009090F /* MailListTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1136665722DA1C180009090F /* MailListTestViewModel.m */; };
 		1171A0C122E36BB900EEBDB1 /* NSDateFormatter+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171A0C022E36BB900EEBDB1 /* NSDateFormatter+Create.m */; };
+		1171A0C422E37DDF00EEBDB1 /* ScrollViewTopDragHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171A0C322E37DDF00EEBDB1 /* ScrollViewTopDragHelper.m */; };
+		1171A0C722E3801200EEBDB1 /* MailSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171A0C622E3801200EEBDB1 /* MailSearchBar.m */; };
+		1171A0CA22E38D8F00EEBDB1 /* MailSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171A0C922E38D8F00EEBDB1 /* MailSearchTextField.m */; };
 		9282800C1B600A852A7639FE /* libPods-SearchDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AC1910CCE62BCD23C319DA /* libPods-SearchDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +54,12 @@
 		1136665722DA1C180009090F /* MailListTestViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MailListTestViewModel.m; sourceTree = "<group>"; };
 		1171A0BF22E36BB900EEBDB1 /* NSDateFormatter+Create.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Create.h"; sourceTree = "<group>"; };
 		1171A0C022E36BB900EEBDB1 /* NSDateFormatter+Create.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Create.m"; sourceTree = "<group>"; };
+		1171A0C222E37DDF00EEBDB1 /* ScrollViewTopDragHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewTopDragHelper.h; sourceTree = "<group>"; };
+		1171A0C322E37DDF00EEBDB1 /* ScrollViewTopDragHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewTopDragHelper.m; sourceTree = "<group>"; };
+		1171A0C522E3801200EEBDB1 /* MailSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MailSearchBar.h; sourceTree = "<group>"; };
+		1171A0C622E3801200EEBDB1 /* MailSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MailSearchBar.m; sourceTree = "<group>"; };
+		1171A0C822E38D8F00EEBDB1 /* MailSearchTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MailSearchTextField.h; sourceTree = "<group>"; };
+		1171A0C922E38D8F00EEBDB1 /* MailSearchTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MailSearchTextField.m; sourceTree = "<group>"; };
 		22AC1910CCE62BCD23C319DA /* libPods-SearchDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SearchDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCEBC20B29D764C0C868FF67 /* Pods-SearchDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchDemo.debug.xcconfig"; path = "Target Support Files/Pods-SearchDemo/Pods-SearchDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +148,10 @@
 				1136664B22DA12370009090F /* UIView+Layout.m */,
 				1136664D22DA13910009090F /* MailItemCell.h */,
 				1136664E22DA13910009090F /* MailItemCell.m */,
+				1171A0C522E3801200EEBDB1 /* MailSearchBar.h */,
+				1171A0C622E3801200EEBDB1 /* MailSearchBar.m */,
+				1171A0C822E38D8F00EEBDB1 /* MailSearchTextField.h */,
+				1171A0C922E38D8F00EEBDB1 /* MailSearchTextField.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +175,8 @@
 				1136665722DA1C180009090F /* MailListTestViewModel.m */,
 				1171A0BF22E36BB900EEBDB1 /* NSDateFormatter+Create.h */,
 				1171A0C022E36BB900EEBDB1 /* NSDateFormatter+Create.m */,
+				1171A0C222E37DDF00EEBDB1 /* ScrollViewTopDragHelper.h */,
+				1171A0C322E37DDF00EEBDB1 /* ScrollViewTopDragHelper.m */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -292,13 +307,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1171A0CA22E38D8F00EEBDB1 /* MailSearchTextField.m in Sources */,
 				1136664522DA08A80009090F /* MailItem.m in Sources */,
 				1136662922DA062A0009090F /* ViewController.m in Sources */,
 				1136664822DA09280009090F /* MailListNavigationBar.m in Sources */,
 				1171A0C122E36BB900EEBDB1 /* NSDateFormatter+Create.m in Sources */,
 				1136663422DA062A0009090F /* main.m in Sources */,
+				1171A0C722E3801200EEBDB1 /* MailSearchBar.m in Sources */,
 				1136665522DA19630009090F /* MailItemTestViewModel.m in Sources */,
 				1136664C22DA12370009090F /* UIView+Layout.m in Sources */,
+				1171A0C422E37DDF00EEBDB1 /* ScrollViewTopDragHelper.m in Sources */,
 				1136664F22DA13910009090F /* MailItemCell.m in Sources */,
 				1136665822DA1C180009090F /* MailListTestViewModel.m in Sources */,
 				1136664222DA08210009090F /* MailListController.m in Sources */,
