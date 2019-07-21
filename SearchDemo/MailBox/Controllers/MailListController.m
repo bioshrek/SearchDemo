@@ -52,7 +52,7 @@ static NSString * const kCellID = @"mail.item";
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     
-    [self updateSearchTextFieldPositionWithSrollView:self.collectionView];
+    [self updateSearchTextFieldPositionWithScrollView:self.collectionView];
 }
 
 #pragma mark - Data & Service
@@ -95,6 +95,7 @@ static NSString * const kCellID = @"mail.item";
     [navigationBar setNeedsLayout];
     [self.view addSubview:navigationBar];
     
+    // layout
     [navigationBar mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.equalTo(navigationBar.superview);
     }];
@@ -154,12 +155,12 @@ static NSString * const kCellID = @"mail.item";
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     [self.topDragHelper scrollViewDidScroll:scrollView];
-    [self updateSearchTextFieldPositionWithSrollView:scrollView];
+    [self updateSearchTextFieldPositionWithScrollView:scrollView];
 }
 
 #pragma mark - Search TextField
 
-- (void)updateSearchTextFieldPositionWithSrollView:(UIScrollView *)scrollView {
+- (void)updateSearchTextFieldPositionWithScrollView:(UIScrollView *)scrollView {
     const CGFloat collectionViewContentTop = MAX(scrollView.top, scrollView.top - scrollView.contentOffset.y);
     self.searchTextField.bottom = collectionViewContentTop - kSpacing_searchTextField_collectionView;
     self.separator.top = collectionViewContentTop;
